@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:frosted_glass/glass_box.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -11,7 +12,11 @@ class HomePage extends StatelessWidget {
           image: DecorationImage(
               image: Image.asset("images/back.png").image, fit: BoxFit.cover),
         ),
-
+        child: GlassBox(
+          child: Text('Hello'),
+          height: 200,
+          width: 200,
+        ),
       ),
     );
   }
